@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css selector</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 2px 4px;
+        box-sizing: border-box;
+      }
+      p:hover {
+        font-size: 20px;
+        margin: 0;
+        background-color: darkcyan;
+        padding: 0;
+      }
+      #header{
+        background-color: aqua;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        border: solid 2px;
+      }
+      article p {
+        background-color: bisque;
+        padding: 0%;
+        margin: 0px;
+      }
+      ul>li{
+        background-color: brown;
+        list-style-type:square ;
+      }
+ 
+    </style>
+  </head>
+  <body>
+    <header></header>
+    <header  id="header" >This is the Header</header>  
+    <h1>Main Heading</h1>
+    <p>This is the paragraph here i can write the texts</p>
+    <input type="text" placeholder="Enter the text holder" />
+
+    <article>
+      <p>
+        this is the paragraph inside the article showing the desccenedent
+        selector
+      </p>
+    </article>
+    <ul>
+      <li>Direct Child List Items</li>
+      <li>Another direct Child</li>
+      <ul>
+        <li>This is Not a direct child of the first ul</li>
+      </ul>
+    </ul>
+  </body>
+</html>
